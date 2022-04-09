@@ -1,0 +1,53 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-1.0">
+        <meta charset="utf-8" />
+        <title>HTML Crud with pure javascript</title>
+        <link rel = "stylesheet" href = "style.css">
+        </head>
+        <body>
+            <h3 style = "text-align:center;padding-top:2%; color:white;">Crud Operation</h3>
+            <script src="script.js"></script>
+            <table>
+                <tr>
+                    <td>
+                        <form onsubmit="event.preventDefault();onFormSubmit();" autocomplete="off">
+                            <div class = "container">
+                                <label>Full Name</label>
+                                <input type = "text" name = "fullname" id = "fullname" required = "" maxlength="20">
+                            </div>
+                            <div class = "container">
+                                <label>EMP Code</label>
+                                <input type = "text" name = "empCode" id = "empcode" required = "">
+                            </div>
+                            <div class = "container">
+                                <label>Salary</label>
+                                <input type = "text" name = "salary" id = "salary"required = "">
+                            </div>
+                            <div class = "container">
+                                <label>City</label>
+                                <input type = "text" name = "city" id = "city" required = "" maxlength="20">
+                            </div>
+                            <div class = "container">
+                                <input type = "submit" value = "submit">
+                            </div>
+                            </form>
+                    </td>
+                    <td>
+                        <table class = "list" id="employeelist">
+                            <thead>
+                               <th>Full name</th>
+                               <th>Emp Code</th>
+                               <th>Salary</th>
+                               <th>City</th>
+                               <th>Action</th>
+                            </thead>
+                            <tbody>
+                                </tbody>
+                            </table>
+                    </td>
+                    </tr>
+                </table>
+        </body>
+</html>

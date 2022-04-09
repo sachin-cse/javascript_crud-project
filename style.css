@@ -1,0 +1,53 @@
+body > table{
+    width:80%;
+    background-color:#456;
+    margin-left:auto;
+    margin-right:auto;
+}
+body{
+    background-color:#456;
+}
+table{
+    border-collapse:collapse;
+}
+table.list{
+    width:100%;
+}
+td,th{
+    border:1px solid #dddddd;
+    text-align:center;
+    padding:8px;
+}
+tr:nth-child(even),table.list thead>tr{
+    background-color:#dddddd;
+}
+input[type=text], input[type=number]{
+    width:50%;
+    padding:12px 20px;
+    margin:8px 0;
+    display:inline-block;
+    border:1px solid #ccc;
+    border-radius:4px;
+}
+#salary{
+    position: relative;
+    left:15px;
+}
+#city{
+    position: relative;
+    left:21px;
+}
+input[type=submit]{
+    width:15%;
+    border:1px solid black;
+    border-radius:4px;
+    outline:none;
+    font-size:16px;
+    font-weight:bold;
+    background-color:grey;
+    border: none;
+}
+input[type=submit]:hover{
+    background-color:aqua;
+}
+
